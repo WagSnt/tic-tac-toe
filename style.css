@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+}
+
+/* Fundo do tabuleiro*/
+#gameBoard {
+  background-color: #deb887;
+  display: grid;
+  grid-template-columns: 6rem 6rem 6rem;
+  grid-auto-rows: 6rem 6rem 6rem;
+  gap: .5rem;
+  margin: 1.5rem;
+  max-width: 19rem;
+}
+
+/* span (local de marcação dos jogadores */
+#gameBoard span {
+  background-color: beige;
+  display: grid;
+  place-content: center; /* Com GRID ele centraliza o conteúdo do span (X e O) */
+  font-size: 5rem;
+}
+
+#gameBoard span.win {
+  background-color: rgb(2, 167, 2);
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
